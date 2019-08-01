@@ -1,0 +1,255 @@
+{% extends "layout.html" %}
+
+{% block code %}
+    
+    <div class="w3-display-container" id="home">
+        <img class="w3-image w3-grayscale-max" src="static/images/back__ground.jpg" alt="" width="100%">
+        <div class="w3-display-middle w3-padding-large w3-half">
+            <div class="w3-khaki w3-opacity-min w3-padding-large w3-round-large w3-center">
+                <form id="Form" method='POST' action="/get_data">
+                    <div class="tab">
+                        <h1 class="w3-xlarge">When I have a task to complete, I usually</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans1" checked value="When I have a task to complete, I usually get it out of the way" >get it out of the way
+                        <input type="radio" name="ans1" value="When I have a task to complete, I usually wait until the last moment" >wait until the last moment
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">When dealing with problems, I focus on the</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans2" checked value="When dealing with problems, I focus on the issues" >issues
+                        <input type="radio" name="ans2" value="When dealing with problems, I focus on the people" >people
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">My ways tend to be more</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans3" checked value="My ways tend to be more revolutionary" >revolutionary
+                        <input type="radio" name="ans3" value="My ways tend to be more conventional" >conventional
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I get energized by</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans4" checked value="I get energized by exploring theories" >exploring theories
+                        <input type="radio" name="ans4" value="I get energized by learning facts" >learning facts
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I prefer to spend time</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans5" checked value="I prefer to spend time interacting with people" >interacting with people
+                        <input type="radio" name="ans5" value="I prefer to spend time introspecting" >introspecting
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I want to</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans6" checked value="I want to get the task done" >get the task done
+                        <input type="radio" name="ans6" value="I want to get to know others" >get to know others
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">When in a one-on-one situation, I usually do more</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans7" checked value="When in a one-on-one situation, I usually do more talking" >talking
+                        <input type="radio" name="ans7" value="When in a one-on-one situation, I usually do more listening" >listening
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I dislike it when people are too</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans8" checked value="I dislike it when people are too emotional" >emotional
+                        <input type="radio" name="ans8" value="I dislike it when people are too insensitive" >insensitive
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I prefer to spend time</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans9" checked value="I prefer to spend time interacting with people" >interacting with people
+                        <input type="radio" name="ans9" value="I prefer to spend time introspecting" >introspecting
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I am more comfortable with</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans10" checked value="I am more comfortable with principles" >principles
+                        <input type="radio" name="ans10" value="I am more comfortable with rules" >rules
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I have more fun engaging in</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans11" checked value="I have more fun engaging in individual activities" >individual activities
+                        <input type="radio" name="ans11" value="I have more fun engaging in group activities" >group activities
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I would classify myself as a</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans12" checked value="I would classify myself as a social butterfly" >social butterfly
+                        <input type="radio" name="ans12" value="I would classify myself as a lone ranger" >lone ranger
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I usually</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans13" checked value="I usually work, then play" >work, then play
+                        <input type="radio" name="ans13" value="I usually play, then work" >play, then work
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">When paying at a store, I often</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans14" checked value="When paying at a store, I often pay and leave without chit-chat" >pay and leave without chit-chat
+                        <input type="radio" name="ans14" value="When paying at a store, I often have conversation with the cashier" >have conversation with the cashier
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">Talking about feelings and emotions is</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans15" checked value="Talking about feelings and emotions is difficult" >difficult
+                        <input type="radio" name="ans15" value="Talking about feelings and emotions is easy" >easy
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I prefer speakers that communicate</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans16" checked value="I prefer speakers that communicate literally" >literally
+                        <input type="radio" name="ans16" value="I prefer speakers that communicate figuratively" >figuratively
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I am more excited about what might happen </h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans17" checked value="I am more excited about what might happen later today or tomorrow" >later today or tomorrow
+                        <input type="radio" name="ans17" value="I am more excited about what might happen in a couple years" >in a couple years
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I tend to</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans18" checked value="I tend to see the big picture" >see the big picture
+                        <input type="radio" name="ans18" value="I tend to focus on details">focus on details
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I make decisions based on</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans19" checked value="I make decisions based on logic" >logic
+                        <input type="radio" name="ans19" value="I make decisions based on feelings" >feelings
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">It is important for me to</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans20" checked value="It is important for me to spend my energy" >spend my energy
+                        <input type="radio" name="ans20" value="It is important for me to conserve my energy" >conserve my energy
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">When there is a need to correct someone, I am</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans21" checked value="When there is a need to correct someone, I am afraid to hurt their feelings" >afraid to hurt their feelings
+                        <input type="radio" name="ans21" value="When there is a need to correct someone, I am quick to do it" >quick to do it
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I entertain myself with my</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans22" checked value="I entertain myself with my imagination" >imagination
+                        <input type="radio" name="ans22" value="I entertain myself with my surroundings" >surroundings
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">I leave things</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                        <input type="radio" name="ans22" checked value="I leave things in their proper place" >in their proper place
+                        <input type="radio" name="ans22" value="I leave things wherever I feel like" >wherever I feel like
+                        </h1>
+                    </div>
+                    <div class="tab">
+                        <h1 class="w3-xlarge">Your Personality Report is ready to share with you.</h1>
+                        <p></p>
+                        <h1 class="w3-xlarge">
+                            <input type="text" placeholder="Your Name..." name="name" required>
+                            <input type="email" placeholder="Your Email..." name="email" required>
+                        </h1>
+                    </div>
+                    <div>
+                        </br>
+                        <div>
+                            <button type="button" class="w3-button w3-black" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                            <button type="button" class="w3-button w3-black" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+    
+    <script>
+        var currentTab = 0; 
+        showTab(currentTab); 
+        
+        function showTab(n) {
+          
+          var x = document.getElementsByClassName("tab");
+          x[n].style.display = "block";
+         
+          if (n == 0) {
+            document.getElementById("prevBtn").style.display = "none";
+          } else {
+            document.getElementById("prevBtn").style.display = "inline";
+          }
+          if (n == (x.length - 1)) {
+            document.getElementById("nextBtn").innerHTML = "Submit";
+          } else {
+            document.getElementById("nextBtn").innerHTML = "Next";
+          }
+        }
+
+        function nextPrev(n) {
+          var x = document.getElementsByClassName("tab");
+                    
+          x[currentTab].style.display = "none";
+          
+          currentTab = currentTab + n;
+          
+          if (currentTab >= x.length) {
+            
+            document.getElementById("Form").submit();
+            return false;
+          }
+          showTab(currentTab);
+        }
+        
+        
+    </script>
+
+{% endblock %}
+
+

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block code %}
+    
+    <div class="w3-display-container" id="home">
+        <img class="w3-image w3-grayscale-max" src="static/images/back__ground.jpg" alt="" width="100%">
+        <div class="w3-display-middle w3-padding-large w3-half">
+            <div class="w3-khaki w3-opacity-min w3-padding-large w3-round-large w3-center">
+                <h3>Thank You {{ name }}, Your personality type is:
+                </br>{{ user_type }}  
+                </br>We have mailed your complete personality report. Please check it out.</h3>
+            </div>
+        </div>
+    </div> 
+              
+{% endblock %}              
